@@ -10,18 +10,13 @@ const reducer = (state = initialState, action) => {
             todos: [...state.todos, action.todo],
         };
     } else if (action.type === "TODO_DELETE") {
-        console.log(JSON.stringify(action))
-        console.log(JSON.stringify(...state.todos))
-        return {
+        return { // 선택한 항목 id값을 빼고 재배열 해줌
             todos: [...state.todos.filter((todo) => todo.id !== action.id)],
         };
     } else if (action.type === "TODO_DONE") {
-        // console.log("완료 했을 때 todo" + JSON.stringify(...state.todos))
-        // console.log("완료 했을 때 action" + JSON.stringify(action))
         return {
-            // todos: [...state.todos.filter((todo) => todo.isComplete !== action.isComplete)],
             todos: [...state.todos.map(todo => todo.id === action.id ? {
-                ...todo, isComplete: !todo.isComplete
+                ...todo, isDone: !todo.isDone
             } : todo)]
         }
     }

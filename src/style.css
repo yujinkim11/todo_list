@@ -1,7 +1,12 @@
+.background {
+    display: flex;
+    justify-content: center;
+}
+
 .todoAllWrap {
-    width: 760px;
+    width: 600px;
     height: 700px;
-    margin: 100px 0 0 650px;
+    margin-top: 70px;
     border: 3px solid black;
     border-radius: 20px;
     display: flex;
@@ -15,17 +20,64 @@
 }
 
 .todoAllWrap .inputWrap {
-    width: 600px;
+    width: 500px;
     height: 50px;
-    background-color: antiquewhite;
     font-size: 30px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoAllWrap .inputWrap input {
+    width: 430px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 22px;
+    padding-left: 15px;
+}
+
+.todoAllWrap .inputWrap .add {
+    width: 35px;
+    height: 35px;
+    content: url(./img/plus.png);
+    margin-left: 15px;
+}
+
+.todoAllWrap .listWrap {
+    width: 500px;
+    font-size: 30px;
+}
+
+.todoAllWrap .listWrap .delete {
+    width: 28px;
+    height: 28px;
+    content: url(./img/delete.png);
+    margin-left: 20px;
+}
+
+.todoAllWrap .listWrap .check {
+    width: 28px;
+    height: 28px;
+    content: url(./img/circle.png);
+    margin-right: 10px;
 }
 
 
-.todoAllWrap .listWrap {
-    width: 600px;
-    height: 100%;
-    background-color: aquamarine;
-    font-size: 25px;
+.todoAllWrap .listWrap .list.done .check {
+    width: 28px;
+    height: 28px;
+    content: url(./img/check.png);
+}
+
+.todoAllWrap .listWrap .list.done {
+    /* 취소선  */
+    text-decoration: line-through;
+}
+
+.todoAllWrap .listWrap .list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }

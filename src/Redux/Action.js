@@ -10,7 +10,7 @@ export const todoAdd = (todo) => {
         todo: {
             id: id++,
             text: todo.text,
-            isComplete: todo.isComplete,
+            isDone: todo.isDone,
         },
     };
 };

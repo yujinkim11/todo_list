@@ -1,17 +1,17 @@
+import { useSelector } from "react-redux";
+import Input from "./Input";
+import ListItem from "./ListItem";
+
 const TodoList = () => {
+    // 여기서 저장된 값을 뿌려와서 넘겨준다 
+    const todos = useSelector((state) => state.todos);
 
     return (
-        <div className="todoAllWrap">
-            <h2 className="todoTitle">To do List</h2>
-            <div className="ListAllWrap">
-                <div className="inputWrap">
-                    <span>입력하는 창</span>
-                    <button>추가</button>
-                </div>
-                <div className="listWrap">
-                    <span>예시 리스트 1</span><button>삭제</button><br />
-                    <span>예시 리스트 2</span><button>삭제</button>
-                </div>
+        <div className="background">
+            <div className="todoAllWrap">
+                <h2 className="todoTitle">To do List</h2>
+                <Input />
+                {todos.map((todo) => (<ListItem key={todo.id} todo={todo} />))}
             </div>
         </div>
     )
