@@ -4,8 +4,8 @@
 }
 
 .todoAllWrap {
-    width: 600px;
-    height: 700px;
+    width: 400px;
+    height: 550px;
     margin-top: 70px;
     border: 3px solid black;
     border-radius: 20px;
@@ -20,9 +20,9 @@
 }
 
 .todoAllWrap .inputWrap {
-    width: 500px;
-    height: 50px;
-    font-size: 30px;
+    width: 350px;
+    height: 30px;
+    font-size: 26px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -30,8 +30,8 @@
 }
 
 .todoAllWrap .inputWrap input {
-    width: 430px;
-    height: 40px;
+    width: 330px;
+    height: 30px;
     border: 3px solid black;
     border-radius: 20px;
     font-size: 22px;
@@ -39,15 +39,15 @@
 }
 
 .todoAllWrap .inputWrap .add {
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     content: url(./img/plus.png);
     margin-left: 15px;
 }
 
 .todoAllWrap .listWrap {
-    width: 500px;
-    font-size: 30px;
+    width: 350px;
+    font-size: 18px;
 }
 
 .todoAllWrap .listWrap .delete {
